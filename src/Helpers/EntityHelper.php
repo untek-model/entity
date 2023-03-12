@@ -4,7 +4,7 @@ namespace Untek\Model\Entity\Helpers;
 
 use ReflectionClass;
 use Untek\Core\Arr\Helpers\ArrayHelper;
-use Untek\Core\Code\Helpers\PropertyHelper;
+use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Text\Helpers\Inflector;
@@ -27,7 +27,7 @@ class EntityHelper
      * @throws \Untek\Core\Contract\Common\Exceptions\InvalidConfigException
      * @throws \Untek\Core\Instance\Exceptions\NotInstanceOfException
      * @deprecated
-     * @see \Untek\Core\Property\Helpers\PropertyHelper::createObject()
+     * @see \Untek\Core\Instance\Helpers\PropertyHelper::createObject()
      */
     public static function createEntity(string $entityClass, $attributes = [])
     {
@@ -62,7 +62,7 @@ class EntityHelper
      * @param bool $recursive
      * @return array
      * @deprecated
-     * @see \Untek\Core\Property\Helpers\PropertyHelper::toArray()
+     * @see \Untek\Core\Instance\Helpers\PropertyHelper::toArray()
      */
     public static function toArray($entity, bool $recursive = false): array
     {
