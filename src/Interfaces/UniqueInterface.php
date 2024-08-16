@@ -2,6 +2,10 @@
 
 namespace Untek\Model\Entity\Interfaces;
 
+use Untek\Core\Code\Helpers\DeprecateHelper;
+
+DeprecateHelper::hardThrow();
+
 /**
  * Интерфейс описания уникальных полей сущности
  */

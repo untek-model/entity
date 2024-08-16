@@ -4,12 +4,15 @@ namespace Untek\Model\Entity\Helpers;
 
 use ReflectionClass;
 use Untek\Core\Arr\Helpers\ArrayHelper;
+use Untek\Core\Code\Helpers\DeprecateHelper;
 use Untek\Core\Instance\Helpers\PropertyHelper;
 use Untek\Core\Collection\Interfaces\Enumerable;
 use Untek\Core\Instance\Helpers\ClassHelper;
 use Untek\Core\Text\Helpers\Inflector;
 //use Untek\Core\Code\Factories\PropertyAccess;
 use Untek\Lib\Components\DynamicEntity\Interfaces\DynamicEntityAttributesInterface;
+
+DeprecateHelper::hardThrow();
 
 class EntityHelper
 {
